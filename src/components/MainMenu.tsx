@@ -39,6 +39,9 @@ export const MainMenu: React.FC<MainMenuProps> = ({
         >
           Return to Title Screen
         </button>
+        <p className="text-xs text-stone-400 mt-6">
+          Developed by Mohammed Nafis (4th B) · Sharann (4th C) · Rayan (4th C)
+        </p>
       </div>
     );
   }
@@ -77,9 +80,9 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                 soundEngine.playClick();
                 onCreateNew();
               }}
-              className="py-2.5 px-4 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-100 font-medium text-sm rounded-xl flex items-center justify-center gap-2 cursor-pointer transition-colors whitespace-nowrap"
+              className="py-2.5 px-3 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-100 font-medium text-xs rounded-xl flex items-center justify-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap"
             >
-              <Plus className="w-4 h-4 text-amber-400" />
+              <Plus className="w-4 h-4 text-amber-400 shrink-0" />
               CREATE NEW WORLD
             </button>
 
@@ -89,9 +92,9 @@ export const MainMenu: React.FC<MainMenuProps> = ({
                 soundEngine.playClick();
                 onOpenWorlds();
               }}
-              className="py-2.5 px-4 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-100 font-medium text-sm rounded-xl flex items-center justify-center gap-2 cursor-pointer transition-colors whitespace-nowrap"
+              className="py-2.5 px-3 bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-100 font-medium text-xs rounded-xl flex items-center justify-center gap-1.5 cursor-pointer transition-colors whitespace-nowrap"
             >
-              <FolderOpen className="w-4 h-4 text-amber-400" />
+              <FolderOpen className="w-4 h-4 text-amber-400 shrink-0" />
               LOAD WORLDS ({worlds.length})
             </button>
           </div>
@@ -133,6 +136,13 @@ export const MainMenu: React.FC<MainMenuProps> = ({
             <Power className="w-4 h-4" />
             EXIT
           </button>
+        </div>
+
+        <div className="mt-6 pt-4 border-t border-white/10 text-center">
+          <p className="text-[11px] font-medium text-stone-400">Developed by</p>
+          <p className="text-xs font-semibold text-stone-200 mt-1">
+            Mohammed Nafis 4th B <span className="text-stone-500" aria-hidden="true">·</span> Sharann 4th C <span className="text-stone-500" aria-hidden="true">·</span> Rayan 4th C
+          </p>
         </div>
       </div>
     </div>
