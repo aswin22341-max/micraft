@@ -1,0 +1,6 @@
+{
+  "name": "Block World",
+  "description": "A procedural 3D voxel sandbox game with exploration, mining, building, crafting, survival, and persistent worlds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
